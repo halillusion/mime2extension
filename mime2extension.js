@@ -3,7 +3,8 @@
 * Copyright contributors; Licensed MIT */
 
 function mime2extension(mime_type) {
-  var ext = 'txt';
+
+  var ext = 'txt'; // default extension
   var mime_types = 
   {
     'a'      : 'application/octet-stream',
@@ -13,6 +14,7 @@ function mime2extension(mime_type) {
     'aiff'   : 'audio/x-aiff',
     'au'     : 'audio/basic',
     'avi'    : 'video/x-msvideo',
+    'txt'    : 'text/plain',
     'bat'    : 'text/plain',
     'bin'    : 'application/octet-stream',
     'bmp'    : 'image/x-ms-bmp',
@@ -32,11 +34,11 @@ function mime2extension(mime_type) {
     'gtar'   : 'application/x-gtar',
     'h'      : 'text/plain',
     'hdf'    : 'application/x-hdf',
-    'htm'    : 'text/html',
     'html'   : 'text/html',
-    'jpe'    : 'image/jpeg',
+    'htm'    : 'text/html',
     'jpeg'   : 'image/jpeg',
     'jpg'    : 'image/jpeg',
+    'jpe'    : 'image/jpeg',
     'js'     : 'application/x-javascript',
     'ksh'    : 'text/plain',
     'latex'  : 'application/x-latex',
@@ -104,7 +106,6 @@ function mime2extension(mime_type) {
     'tiff'   : 'image/tiff',
     'tr'     : 'application/x-troff',
     'tsv'    : 'text/tab-separated-values',
-    'txt'    : 'text/plain',
     'ustar'  : 'application/x-ustar',
     'vcf'    : 'text/x-vcard',
     'wav'    : 'audio/x-wav',
